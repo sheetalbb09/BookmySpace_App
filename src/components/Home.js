@@ -12,15 +12,18 @@ function Home() {
   return (
     <div className="home-container">
       {/* Hero Section */}
-      <div className="hero-section" style={{ backgroundImage: `url(${heroImage})` }}>
+      <div
+        className="hero-section"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
         <div className="hero-content">
-          <h1>Find Your Space</h1>
-          <h2>bookmyspace.in</h2>
-          <p className="subtitle">Book modern, fully-equipped rooms for productive meetings, training sessions, and team collaborations.</p>
-          <button
-            className="cta-button"
-            onClick={() => navigate('/book-room')}
-          >
+          <h1 style={{ color: "white" }}>Find Your Space</h1>
+          <h2 style={{ color: "white" }}>bookmyspace.in</h2>
+          <p className="subtitle">
+            Book modern, fully-equipped rooms for productive meetings, training
+            sessions, and team collaborations.
+          </p>
+          <button className="cta-button" onClick={() => navigate("/book-room")}>
             Book Now <i className="fas fa-arrow-right"></i>
           </button>
         </div>
@@ -33,17 +36,26 @@ function Home() {
           <div className="feature-card">
             <i className="fas fa-users"></i>
             <h3>Versatile Spaces</h3>
-            <p>From boardroom meetings to collaborative workshops, we have the perfect room for every occasion.</p>
+            <p>
+              From boardroom meetings to collaborative workshops, we have the
+              perfect room for every occasion.
+            </p>
           </div>
           <div className="feature-card">
             <i className="fas fa-wifi"></i>
             <h3>High-Speed Connectivity</h3>
-            <p>Reliable, lightning-fast WiFi ensures seamless presentations and virtual meetings.</p>
+            <p>
+              Reliable, lightning-fast WiFi ensures seamless presentations and
+              virtual meetings.
+            </p>
           </div>
           <div className="feature-card">
             <i className="fas fa-calendar-check"></i>
             <h3>Effortless Booking</h3>
-            <p>Book your desired room instantly with our intuitive online platform and real-time availability.</p>
+            <p>
+              Book your desired room instantly with our intuitive online
+              platform and real-time availability.
+            </p>
           </div>
         </div>
       </div>
@@ -53,19 +65,40 @@ function Home() {
         <h2>Explore Our Spaces</h2>
         <div className="rooms-grid">
           <div className="room-card">
-            <img src={meetingRoomImage} alt="Vista Conference Room" className="room-image" />
+            <img
+              src={meetingRoomImage}
+              alt="Vista Conference Room"
+              className="room-image"
+            />
             <h3>Vista</h3>
-            <p>A spacious and modern conference room, ideal for large meetings and presentations. Equipped with state-of-the-art technology.</p>
+            <p>
+              A spacious and modern conference room, ideal for large meetings
+              and presentations. Equipped with state-of-the-art technology.
+            </p>
           </div>
           <div className="room-card">
-            <img src={teamRoomImage} alt="Matrix Team Room" className="room-image" />
+            <img
+              src={teamRoomImage}
+              alt="Matrix Team Room"
+              className="room-image"
+            />
             <h3>Matrix</h3>
-            <p>A collaborative space perfect for team discussions, brainstorming sessions, and project planning.</p>
+            <p>
+              A collaborative space perfect for team discussions, brainstorming
+              sessions, and project planning.
+            </p>
           </div>
           <div className="room-card">
-            <img src={trainingRoomImage} alt="Teknest Training Room" className="room-image" />
+            <img
+              src={trainingRoomImage}
+              alt="Teknest Training Room"
+              className="room-image"
+            />
             <h3>Huddle</h3>
-            <p>A dedicated training space equipped with interactive whiteboards, comfortable seating, and advanced audio-visual equipment.</p>
+            <p>
+              A dedicated training space equipped with interactive whiteboards,
+              comfortable seating, and advanced audio-visual equipment.
+            </p>
           </div>
         </div>
       </div>
@@ -74,17 +107,14 @@ function Home() {
       <div className="cta-section">
         <h2>Ready to Get Started?</h2>
         <p>Find the perfect room and book your space today!</p>
-        <button
-          className="cta-button"
-          onClick={() => navigate('/book-room')}
-        >
+        <button className="cta-button" onClick={() => navigate("/book-room")}>
           Book Now <i className="fas fa-calendar-alt"></i>
         </button>
       </div>
 
       {/* Footer */}
       <footer className="site-footer">
-        <p>© 2024 Room Booking System</p>
+        <p>© 2025 Room Booking System</p>
       </footer>
     </div>
   );
