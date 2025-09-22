@@ -19,7 +19,7 @@ function Home() {
         <div className="hero-content">
           <h1 style={{ color: "white" }}>Find Your Space</h1>
           <h2 style={{ color: "white" }}>bookmyspace.in</h2>
-          <p className="subtitle">
+          <p className="subtitle" style={{fontSize:'24px'}}>
             Book modern, fully-equipped rooms for productive meetings, training
             sessions, and team collaborations.
           </p>
